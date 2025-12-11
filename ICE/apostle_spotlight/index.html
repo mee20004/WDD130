@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kameron's WDD130 Portfolio</title>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 0;
+      background-color: #f3f4f6;
+      color: #333;
+    }
+    header {
+      background-color: #005f73;
+      color: white;
+      padding: 1.5rem;
+      text-align: center;
+    }
+    nav {
+      background-color: #0a9396;
+      text-align: center;
+      padding: 0.75rem;
+    }
+    nav a {
+      color: white;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    main {
+      padding: 2rem;
+      max-width: 900px;
+      margin: auto;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    h1, h2 {
+      color: #005f73;
+    }
+    img {
+      display: block;
+      margin: 1rem auto;
+      width: 200px;
+      border-radius: 10px;
+    }
+    ul {
+      background: #e0fbfc;
+      padding: 1rem;
+      border-radius: 8px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1rem 0;
+    }
+    th, td {
+      border: 1px solid #ccc;
+      padding: 0.5rem;
+      text-align: left;
+    }
+    th {
+      background-color: #94d2bd;
+    }
+    form {
+      background-color: #e0fbfc;
+      padding: 1rem;
+      border-radius: 8px;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #005f73;
+      color: white;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Kameron’s Web Design Portfolio</h1>
+    <p>WDD130 - BYU Flex GE</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="wwr.html">WWR</a>
+    <a href="ice.html">ICE</a>
+    <a href="about.html">About Me</a>
+  </nav>
+
+  <main>
+    <h2>Welcome!</h2>
+    <p>
+      This is my WDD130 portal page where I’ll collect all my web design work for the semester. 
+      Here you’ll find links to my assignments, projects, and reflections as I learn more about HTML and CSS.
+    </p>
+
+    <img src="images/logo.png" alt="My logo" />
+
+    <h3>Projects and Goals</h3>
+    <ul>
+      <li>Learn how to structure web pages with HTML</li>
+      <li>Style pages using CSS and layout techniques</li>
+      <li>Build a professional-looking online portfolio</li>
+    </ul>
+
+    <h3>Assignment Overview</h3>
+    <table>
+      <tr>
+        <th>Project</th>
+        <th>Description</th>
+        <th>Due Date</th>
+      </tr>
+      <tr>
+        <td>Whitewater Rafting Site</td>
+        <td>Practice using HTML and CSS for a multi-page site</td>
+        <td>Week 4</td>
+      </tr>
+      <tr>
+        <td>ICE Challenges</td>
+        <td>Quick in-class coding exercises</td>
+        <td>Weekly</td>
+      </tr>
+    </table>
+
+    <h3>Contact Me</h3>
+    <form>
+      <label for="name">Name:</label><br />
+      <input type="text" id="name" name="name" required /><br /><br />
+      
+      <label for="email">Email:</label><br />
+      <input type="email" id="email" name="email" required /><br /><br />
+      
+      <label for="message">Message:</label><br />
+      <textarea id="message" name="message" rows="4"></textarea><br /><br />
+      
+      <button type="submit">Send</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Kameron Meeker | WDD130 | All Rights Reserved</p>
+  </footer>
+</body>
+</html>

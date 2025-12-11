@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <style>
+    body {
+        margin: 0;
+        background: #e8eced;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+    }
+
+    .container {
+        width: 85%;
+        max-width: 900px;
+        background-image: url('images/christus.webp');
+        background-size: cover;
+        background-position: center;
+        border-radius: 16px;
+        border: 8px solid #000;
+        padding: 20px;
+        box-sizing: border-box;
+        text-align: center;
+    }
+
+    h1, h2 {
+        color: white;
+        margin: 15px 0;
+        font-size: 1.5rem;
+    }
+
+    /* First Presidency row */
+    .first-presidency {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+        align-items: end;
+    }
+
+    .first-presidency img {
+        object-fit: cover;
+        border-radius: 50%;
+        border: 6px solid white;
+    }
+
+    .first-presidency .small {
+        width: 130px;
+        height: 130px;
+    }
+
+    .first-presidency .large {
+        width: 150px;
+        height: 150px;
+    }
+
+    /* Apostles grid */
+    .apostles {
+        display: grid;
+        grid-template-columns: repeat(4, 140px);
+        gap: 15px;
+        justify-content: center;
+    }
+
+    .apostles img {
+        width: 120px;
+        height: 120px;
+        object-fit: cover;
+        border-radius: 50%;
+        border: 6px solid white;
+    }
+
+    @media (max-width: 900px) {
+        .apostles { grid-template-columns: repeat(3, 1fr); }
+        .apostles img { width: 110px; height: 110px; }
+    }
+
+    @media (max-width: 600px) {
+        .apostles { grid-template-columns: repeat(2, 1fr); }
+        .first-presidency .small { width: 110px; height: 110px; }
+        .first-presidency .large { width: 130px; height: 130px; }
+        .apostles img { width: 100px; height: 100px; }
+    }
+
+    /* Hover effect: change outline to yellow */
+    .first-presidency img:hover,
+    .apostles img:hover {
+        border-color: yellow;
+        transition: border-color 0.3s ease;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>First Presidency</h1>
+
+    <div class="first-presidency">
+        <img class="small" src="images/oaks.webp">
+        <img class="large" src="images/nelson.webp">
+        <img class="small" src="images/eyring.webp">
+    </div>
+
+    <h2>Quorum of the Twelve Apostles</h2>
+
+    <div class="apostles">
+        <img src="images/holland.webp">
+        <img src="images/uchtdorf.webp">
+        <img src="images/bednar.webp">
+        <img src="images/cook.webp">
+
+        <img src="images/christofferson.webp">
+        <img src="images/anderson.webp">
+        <img src="images/rasband.webp">
+        <img src="images/stevenson.webp">
+
+        <img src="images/renlund.webp">
+        <img src="images/gong.webp">
+        <img src="images/soares.webp">
+        <img src="images/kearon.webp">
+    </div>
+  </div>
+</body>
+</html>

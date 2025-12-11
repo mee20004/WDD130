@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;600&display=swap');
+
+body {
+  font-family: 'Rubik', sans-serif;
+  background-color: #447D9B;
+  color: #FFFFFF;
+  margin: 0;
+  padding: 0;
+}
+
+/*Header*/
+header {
+  background-color: #273F4F;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 20px;
+  border: 1px solid #000;
+  position: relative;
+}
+
+header::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background-color: #FE7743;
+}
+
+header .left-section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+header img {
+  height: 40px;
+  width: auto;
+}
+
+header h1 {
+  font-size: 1em;
+  margin: 0;
+  white-space: nowrap;
+}
+
+nav {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1.2em;
+  white-space: nowrap;
+}
+
+nav a {
+  color: #FFFFFF;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+nav a:hover {
+  color: #FE7743;
+}
+
+/*Main*/
+main {
+  background-color: #447D9B;
+  padding: 30px;
+  max-width: 900px;
+  margin: 20px auto;
+}
+
+section {
+  margin-bottom: 30px;
+}
+
+h2, h3 {
+  color: #FFFFFF;
+  margin-bottom: 10px;
+}
+
+p, ul, li {
+  color: #FFFFFF;
+  line-height: 1.5;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+table {
+  width: 100%;
+  background-color: #D7D7D7;
+  color: #273F4F;
+  border-collapse: collapse;
+  text-align: center;
+  margin-top: 10px;
+  font-weight: 600;
+  border-radius: 5px;
+}
+
+table th, table td {
+  border: 1px solid #FFFFFF;
+  padding: 20px;
+}
+
+table td:nth-child(2),
+table td:nth-child(3) {
+    text-align: left;
+}
+
+table td:nth-child(1),
+table td:nth-child(4) {
+    text-align: center;
+}
+
+form {
+  background-color: #D7D7D7;
+  color: #273F4F;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+label {
+  font-weight: 600;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border: 1px solid #447D9B;
+  border-radius: 4px;
+}
+
+button {
+  background-color: #FE7743;
+  color: #FFFFFF;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #273F4F;
+}
+
+/*Footer*/
+footer {
+  text-align: center;
+  color: #D7D7D7;
+  font-size: 0.8em;
+  margin-top: 40px;
+}

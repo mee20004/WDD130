@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../../../CloudTech/MEEKER-week4-day1"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "prophet_cards"
+	}
+}
